@@ -36,6 +36,7 @@ startQuiz.addEventListener("click", () => {
       submitContainer.classList.add("flex");
       loadQuiz();
       quizTimer();
+     
       clearInterval(x);
     }
     counter.innerText = counterNum;
@@ -43,10 +44,11 @@ startQuiz.addEventListener("click", () => {
   }, 1000);
 });
 
+
 // All quiz data fetched from json
-const loadQuiz = async () => {
-  const res = await fetch("./data/quiz.json");
-  const data = await res.json;
+const loadQuiz = async () => { 
+  const response = await fetch("/data/quiz.json");
+  const data = await response.json();
   quizData = data;
   displayQuiz(data);
 };
