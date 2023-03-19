@@ -93,7 +93,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   };
 
   for (let ans of answers) {
-    if (ans.answer === ans.givenAns) {
+    if (ans.answers === ans.givenAns) {
       totalMark += 10;
     }
   }
