@@ -4,6 +4,17 @@ let timer;
 let quizData;
 let answers = [];
 
+
+// Get the blog button element by ID
+const blogBtn = document.getElementById('blog-btn');
+
+// Add a click event listener to the button
+blogBtn.addEventListener('click', function() {
+  // Do something when the button is clicked, for example:
+  window.location.href = 'https://docs.google.com/document/d/1A-3vSEFm46rbidIssI8EEjHmWM3Nx9O3Oo1mit97m1o/edit#heading=h.na8ghswty175';
+});
+
+
 // Dom elements called
 let startQuiz = document.querySelector("#startQuiz");
 let rulesContainer = document.querySelector("#rulesContainer");
